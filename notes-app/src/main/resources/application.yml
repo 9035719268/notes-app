@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    main:
+      driver-class-name: org.postgresql.Driver
+      jdbc-url: "jdbc:postgresql://localhost:5432/notes-app"
+      username: postgres
+      password: postgres
+      pool-size: 30
