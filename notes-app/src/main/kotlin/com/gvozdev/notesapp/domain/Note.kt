@@ -4,8 +4,8 @@ import java.util.*
 
 data class Note(
     val id: Long,
-    val name: String = "",
     val text: String,
-    val creationDate: Date,
-    val hashtags: Set<String> = setOf()
+    val created: Date = Date(),
+    val name: String = "",
+    val hashtags: Set<Hashtag> = setOf()
 )
