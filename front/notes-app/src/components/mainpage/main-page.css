@@ -1,0 +1,51 @@
+a {
+    padding-right: 5px;
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.add-note-button {
+    background-color: blue;
+}
+
+.add-note-button:hover {
+    background-color: darkblue;
+}
+
+.delete-note-button {
+    background-color: red;
+}
+
+.delete-note-button:hover {
+    background-color: black;
+}
+
+.edit-note-button {
+    background-color: magenta;
+}
+
+.edit-note-button:hover {
+    background-color: darkmagenta;
+}
+
+.fetch-notes-button {
+    background-color: darkslateblue;
+}
+
+.fetch-notes-button:hover {
+    background-color: green;
+}
+
+.find-note-button {
+    background-color: lightblue;
+}
+
+.find-note-button:hover {
+    background-color: blueviolet;
+}

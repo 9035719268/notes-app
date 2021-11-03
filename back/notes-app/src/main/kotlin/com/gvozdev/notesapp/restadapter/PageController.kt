@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 
 @RestController
+@CrossOrigin(origins = ["http://localhost:3000"])
 class PageController(private val noteService: NoteService) {
 
     @PostMapping("/note/add")
@@ -21,7 +22,6 @@ class PageController(private val noteService: NoteService) {
         noteService.deleteNoteById(id)
 
         return ResponseEntity.ok().build()
-
     }
 
     @PatchMapping("/note/{id}/edit")

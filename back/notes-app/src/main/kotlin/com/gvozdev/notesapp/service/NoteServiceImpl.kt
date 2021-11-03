@@ -48,6 +48,7 @@ open class NoteServiceImpl(
         }
     }
 
+    @Transactional
     override fun getAllNotes(): List<Note> {
         return noteDao.findAllNotes()
     }
