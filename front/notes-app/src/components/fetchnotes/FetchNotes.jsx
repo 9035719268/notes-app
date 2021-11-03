@@ -10,9 +10,7 @@ const FetchNotes = () => {
       .then(response => setNotes(response.data));
   }, []);
 
-  return (
-    <FetchNotesView notes={notes} />
-  );
+  return (<FetchNotesView notes={notes} />);
 };
 
 export default FetchNotes;

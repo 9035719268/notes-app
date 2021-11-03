@@ -1,6 +1,6 @@
 import Note from "./Note";
 import {useState} from "react";
-import {filterNote} from "../../service/filter";
+import {filterNote} from "./filter";
 
 const FetchNotesView = props => {
   const [hashtagToSearch, setHashtagToSearch] = useState("");

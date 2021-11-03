@@ -1,4 +1,4 @@
-import "./note.css";
+import "./fetch-notes.css";
 
 const Note = props => {
   const id = props.note.id;
