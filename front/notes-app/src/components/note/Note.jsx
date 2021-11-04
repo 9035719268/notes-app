@@ -4,16 +4,18 @@ const Note = props => {
   const id = props.note.id;
   const text = props.note.text;
   const created = props.note.created;
+  const hashtags = props.note.hashtags;
 
   let noteName = "";
   if (props.note.name !== "") {
     noteName = "Название заметки: " + props.note.name;
+
   }
 
   let noteHashtags = "";
-  if (props.note.hashtags.length !== 0) {
+  if (hashtags.length !== 0 && hashtags[0].text !== "") {
     noteHashtags = "Хэштеги: ";
-    props.note.hashtags.forEach(hashtag => {
+    hashtags.forEach(hashtag => {
       noteHashtags += hashtag.text;
       noteHashtags += " ";
     });

@@ -21,7 +21,7 @@ const AddNoteView = () => {
         <div className="form-fields">
           <label>
             Введите текст заметки:
-            <input type="text" placeholder="Текст заметки" />
+            <input type="text" placeholder="Текст заметки" required />
           </label>
         </div>
         <div className="form-fields">

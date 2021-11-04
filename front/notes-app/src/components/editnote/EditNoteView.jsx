@@ -22,13 +22,13 @@ const EditNoteView = () => {
         <div className="form-fields">
           <label>
             Введите ID заметки для редактирования:
-            <input type="text" placeholder="ID заметки" />
+            <input type="text" placeholder="ID заметки" required />
           </label>
         </div>
         <div className="form-fields">
           <label>
             Введите новый текст заметки:
-            <input type="text" placeholder="Текст заметки" />
+            <input type="text" placeholder="Текст заметки" required />
           </label>
         </div>
         <div className="form-fields">
