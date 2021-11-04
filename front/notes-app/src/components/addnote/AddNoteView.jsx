@@ -1,5 +1,6 @@
 import FetchNotes from "../fetchnotes/FetchNotes";
 import {addNote} from "../../service/requests";
+import "../../service/form-style.css";
 
 const AddNoteView = () => {
   const handleSubmit = event => {
@@ -15,20 +16,21 @@ const AddNoteView = () => {
 
   return (
     <div>
+      <h1>Добавление заметки</h1>
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className="form-fields">
           <label>
             Введите текст заметки:
             <input type="text" placeholder="Текст заметки" />
           </label>
         </div>
-        <div>
+        <div className="form-fields">
           <label>
             Введите название заметки (опционально):
             <input type="text" placeholder="Название заметки" />
           </label>
         </div>
-        <div>
+        <div className="form-fields">
           <label>
             Введите хэштеги для заметки (опционально):
             <input type="text" placeholder="Хэштеги для заметки" />

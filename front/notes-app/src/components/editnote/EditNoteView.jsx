@@ -1,5 +1,5 @@
 import FetchNotes from "../fetchnotes/FetchNotes";
-import "./edit-note.css";
+import "../../service/form-style.css";
 import {editNote} from "../../service/requests";
 
 const EditNoteView = () => {
@@ -17,26 +17,27 @@ const EditNoteView = () => {
 
   return (
     <div>
+      <h1>Редактирование заметки</h1>
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className="form-fields">
           <label>
             Введите ID заметки для редактирования:
             <input type="text" placeholder="ID заметки" />
           </label>
         </div>
-        <div>
+        <div className="form-fields">
           <label>
             Введите новый текст заметки:
             <input type="text" placeholder="Текст заметки" />
           </label>
         </div>
-        <div>
+        <div className="form-fields">
           <label>
             Введите новое название заметки (опционально):
             <input id="edit-note-name" type="text" placeholder="Название заметки" />
           </label>
         </div>
-        <div>
+        <div className="form-fields">
           <label>
             Введите новые хэштеги для заметки (опционально):
             <input id="edit-note-name" type="text" placeholder="Хэштеги для заметки" />

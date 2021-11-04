@@ -1,8 +1,7 @@
 import FetchNotes from "../fetchnotes/FetchNotes";
 import {findNote} from "../../service/requests";
-import Note from "../fetchnotes/Note";
+import Note from "../note/Note";
 import {useState} from "react";
-import "./find-note.css";
 
 const FindNoteView = () => {
   const [noteInfo, setNoteInfo] = useState();
@@ -28,6 +27,7 @@ const FindNoteView = () => {
 
   return (
     <div>
+      <h1>Поиск заметки</h1>
       <form onSubmit={handleSubmit}>
         <label>
           Введите текст или название заметки для поиска:

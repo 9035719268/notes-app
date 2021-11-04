@@ -1,4 +1,4 @@
-import Note from "./Note";
+import Note from "../note/Note";
 import {useState} from "react";
 import {filterNote} from "./filter";
 
@@ -16,8 +16,10 @@ const FetchNotesView = props => {
 
   return (
     <div>
-      <input type="search" placeholder="Поиск по заметкам" onChange={event => setHashtagToSearch(event.target.value)} />
-      <input type="date" onChange={event => setDateToSearch(event.target.value)} />
+      <div>
+        <input type="search" placeholder="Поиск по заметкам" onChange={event => setHashtagToSearch(event.target.value)} />
+        <input type="date" onChange={event => setDateToSearch(event.target.value)} />
+      </div>
       <h1>{notes}</h1>
     </div>
   );

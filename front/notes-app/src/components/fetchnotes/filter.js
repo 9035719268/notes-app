@@ -1,4 +1,4 @@
-import Note from "./Note";
+import Note from "../note/Note";
 
 export const filterNote = (note, hashtagToSearch, dateToSearch, key) => {
   const filteredByHashtags = note.hashtags.filter(hashtag => hashtag.text.toLowerCase().includes(hashtagToSearch));
