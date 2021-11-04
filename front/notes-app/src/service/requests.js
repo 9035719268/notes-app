@@ -22,7 +22,7 @@ export const editNote = (noteId, noteText, noteName, noteHashtags) => {
 
 export const fetchNotes = () => axios.get("http://localhost:8080/notes");
 
-export const findNote = () => axios.get("http://localhost:8080/note/search");
+export const findNote = searchText => axios.get(`http://localhost:8080/note/search?text=${searchText}`);
 
 const splitHashtags = hashtags => {
   return hashtags.split(", ").map(hashtag => (

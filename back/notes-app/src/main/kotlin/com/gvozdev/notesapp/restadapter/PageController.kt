@@ -2,7 +2,7 @@ package com.gvozdev.notesapp.restadapter
 
 import com.gvozdev.notesapp.domain.Note
 import com.gvozdev.notesapp.service.NoteService
-import org.springframework.http.HttpStatus.FOUND
+import org.springframework.http.HttpStatus.OK
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 
@@ -41,7 +41,7 @@ class PageController(private val noteService: NoteService) {
         val note = noteService.findNoteByText(text)
 
         return if (note != null) {
-            ResponseEntity(note, FOUND)
+            ResponseEntity(note, OK)
         } else {
             ResponseEntity.notFound().build()
         }
